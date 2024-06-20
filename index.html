@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5CKf8E2Q0m/JGcw2Kd75Vu8YhL3fOuZN/jj+XbrlJ/1RfRGHwQQQjG1+3MqYT+bDtEZyXDVXJLZW/RkRt+4KA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-black p-4 flex justify-between items-center fixed w-full z-50">
+        <div class="flex items-center ml-60">
+            <a href="#home" class="text-2xl text-gray-100 font-bold ml auto"></a> 
+        </div>
+        <button class="text-gray-100 focus:outline-none md:hidden" id="menu-button">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="hidden md:flex md:items-center md:space-x-4 lg:flex lg:items-center lg:space-x-4" id="menu">
+            <a href="#home" class="px-4 py-2 text-sm font-bold text-gray-100 hover:text-gray-400">Home</a>
+            <a href="#about" class="px-4 py-2 text-sm font-bold text-gray-100 hover:text-gray-400">About</a>
+            <a href="#projects" class="px-4 py-2 text-sm font-bold text-gray-100 hover:text-gray-400">Projects</a>
+            <a href="#contact" class="px-4 py-2 text-sm font-bold text-gray-100 hover:text-gray-400">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="bg-gray-900 py-40 md:py-60 text-center relative mt-8 md:mt-16">
+        <div class="bg-gray-800 bg-opacity-75 rounded-lg p-8 md:p-12 mx-auto max-w-3xl relative z-10 move-up">
+            <div class="container mx-auto flex flex-col items-center px-4 relative z-20">
+                <img src="./images/profile_pic.jpg" class="w-60 h-60 mb-2 md:mb-4 object-cover">
+                <h1 class="text-5xl font-bold text-white">Purva Pratapwar</h1>
+            </div>
+            <p class="text-xl font-semibold text-white mt-2 md:mt-4 mx-4">Hey all, welcome to my portfolio!!</p>
+            <p class="text-gray-100 mb-4 mx-4">I am an undergrad student from IIT Madras pursuing a B.Tech degree in the Mechanical Engineering department.</p>
+        </div>
+    </section>
+    
+
+    <section id="about" class="bg-green-800 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-100 mb-8 text-center">About Me</h2>
+            <div class="flex flex-col lg:flex-row items-center justify-center lg:justify-between mb-12">
+                <div class="max-w-md lg:w-1/2 bg-gray-900 rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-gray-100 mb-4">Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800 rounded-lg shadow p-4 flex items-center">
+                            <i class="fab fa-html5 text-4xl text-white mr-4"></i>
+                            <span class="text-xl font-bold text-gray-100">HTML</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg shadow p-4 flex items-center">
+                            <i class="fab fa-css3-alt text-3xl text-white mr-4"></i>
+                            <span class="text-lg font-bold text-gray-100">CSS</span>
+                        </div>                        
+                        <div class="bg-gray-800 rounded-lg shadow p-4 flex items-center">
+                            <i class="fab fa-python text-4xl text-white mr-4"></i>
+                            <span class="text-xl font-bold text-gray-100">Python</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg shadow p-4 flex items-center">
+                            <i class="fas fa-cogs text-4xl text-white mr-4"></i>
+                            <span class="text-xl font-bold text-gray-100">Data Structures and Algorithms</span>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg shadow p-4 flex items-center">
+                            <span style="font-size: 2rem; color: white;">🐧</span>
+                            <span class="text-xl font-bold text-gray-100 ml-4">Linux OS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-5 lg:mt-0 max-w-xs">
+                    <div class="bg-gray-900 rounded-lg shadow-lg p-6 pr-4 ">
+                        <h4 class="text-xl font-bold text-gray-100 mb-4">Resume</h4>
+                        <p class="text-gray-100 mb-4 mx-4"> I am looking forward to have more professional experiences.</p>
+                        <p class="text-gray-100 mb-4 mx-4">Here's my resume !!</p>
+                        <a href="./images/F1_Resume.pdf" download="Resume.pdf" class="download-button">Download My Resume</a>
+                        <script src="script.js"></script>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 mt-5 lg:mt-0 max-w-xs">
+                    <div class="bg-gray-900 rounded-lg shadow-lg p-6 pr-4 max-w-xs">
+                        <h4 class="text-xl font-bold text-gray-100 mb-4">Tools & Softwares (Technical)</h4>
+                        <ul class="text-gray-100">
+                            <li class="mb-2">Git, GitHub</li>
+                            <li class="mb-2">Latex, Excel</li>
+                            <li class="mb-2">PowerPoint, AutoCAD</li>
+                            <li class="mb-2">MS Word, VScode</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-900 rounded-lg shadow-lg p-6 mt-6 pr-4 max-w-xs">
+                        <h4 class="text-xl font-bold text-gray-100 mb-4">Tools & Softwares (Design)</h4>
+                        <ul class="text-gray-100">
+                            <li class="mb-2">Canva Pro, Figma</li>
+                            <li class="mb-2">Illustrator, Photoshop</li>
+                            <li class="mb-2">MS Clipchamp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="bg-gray-900 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <i class="fas fa-laptop-code fa-4x text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Portfolio</h3>
+                    <p class="text-sm text-gray-400 mb-4">Designed a responsive collapsible personal portfolio website</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <i class="fas fa-pencil-alt fa-4x text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Project</h3>
+                    <p class="text-sm text-gray-400 mb-4">Ball Screw Drive System (Course Project)</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <i class="fas fa-gamepad fa-4x text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Game</h3>
+                    <p class="text-sm text-gray-400 mb-4">User-friendly TicTacToe Game</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <i class="fas fa-bars fa-4x text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Project</h3>
+                    <p class="text-sm text-gray-400 mb-4">Cash Flow Minimizer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="bg-gray-800 py-8 px-3">
+        <h2 class="text-3xl font-bold text-gray-100 mb-4 text-center">Contact Me</h2>
+        <div class="container mx-auto flex flex-col items-center px-4">
+            <form class="w-full max-w-md">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="name">
+                            Name
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-700 text-gray-100 border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-gray-500" id="name" type="text" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="email">
+                            Email
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-700 text-gray-100 border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-gray-500" id="email" type="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <label class="block uppercase tracking-wide text-gray-100 text-xs font-bold mb-2" for="message">
+                            Message
+                        </label>
+                        <textarea class="appearance-none block w-full bg-gray-700 text-gray-100 border border-gray-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-600 focus:border-gray-500 h-32 resize-none" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button class="bg-green-800 hover:bg-gray-700 text-gray-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-gray-900 p-4 mt-auto flex flex-col items-center sm:px-4"><br>
+        <div class="container mx-auto flex flex-col items-center px-4">
+
+            <div class="flex items-center">
+                <i class="fas fa-envelope text-4xl text-gray-100 mr-4"></i>
+                <a href="mailto:pratapwarpurva@gmail.com" class="text-2xl font-bold text-gray-100 hover:text-gray-400">pratapwarpurva@gmail.com</a>
+            </div>
+
+            <div class="mt-4 flex">
+                <a href="https://www.instagram.com/purva_p_1109/" class="mx-4 text-4xl font-bold text-gray-100 hover:text-gray-400">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/purva-pratapwar-8a6362263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="mx-4 text-4xl font-bold text-gray-100 hover:text-gray-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/me22b179" class="mx-4 text-4xl font-bold text-gray-100 hover:text-gray-400">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
